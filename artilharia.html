@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Link do SwiperJS para CSS do carrossel do elenco e escudos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Cerâmica Sumaré - Artilharia</title>
+
+</head>
+
+<body>
+
+    <button class="scrollTop" onclick="backTop();">
+        <img src="img/arrow.svg" alt="">
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo1.png" width="100px">
+                </a>
+
+                <!-- Botão do menu -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Página Inicial</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Clube
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="historia.html">História</a>
+                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
+                                <a class="dropdown-item" href="artilharia.html">Artilharia</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Futebol
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="calendario.html">Calendário</a>
+                                <a class="dropdown-item" href="sala-de-trofeus.html">Sala de troféus</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fotos.html" class="nav-link">Fotos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="agradecimentos.html" class="nav-link">Agradecimentos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2 class="mt-5 corpo">Artilharia do time do Cerâmica em campeonatos oficiais da L.H.F.</h2>
+
+        <table class="mt-5 mb-5 table table-striped table-bordered table-hover">
+            <tr> <!--primeira linha-->
+                <td class="uppercase">Atletas</td>
+                <td class="uppercase">Gols</td>
+            </tr> <!--primeira linha-->
+
+            <tr> <!--segunda linha-->
+                <td>Joãozinho</td>
+                <td>97</td>
+            </tr><!--segunda linha-->
+
+            <tr>
+                <td>Nenão</td>
+                <td>92</td>
+            </tr>
+
+            <tr>
+                <td>Ari</td>
+                <td>63</td>
+            </tr>
+
+            <tr>
+                <td>Maico</td>
+                <td>63</td>
+            </tr>
+
+            <tr>
+                <td>Zezão</td>
+                <td>47</td>
+            </tr>
+
+            <tr>
+                <td>Ney</td>
+                <td>37</td>
+            </tr>
+
+            <tr>
+                <td>Maciel</td>
+                <td>34</td>
+            </tr>
+
+            <tr>
+                <td>Gessé</td>
+                <td>31</td>
+            </tr>
+
+            <tr>
+                <td>Clemente</td>
+                <td>29</td>
+            </tr>
+
+            <tr>
+                <td>Bidias</td>
+                <td>29</td>
+            </tr>
+
+            <tr>
+                <td>Silvio (Bita)</td>
+                <td>29</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td>27</td>
+            </tr>
+
+            <tr>
+                <td>Ronaldo</td>
+                <td>24</td>
+            </tr>
+
+            <tr>
+                <td>Terosso</td>
+                <td>18</td>
+            </tr>
+
+            <tr>
+                <td>Dejinha</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>Tavinho</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>Bily</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>Roberto</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <td>Nivaldinho</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <td>Babá</td>
+                <td>13</td>
+            </tr>
+
+            <tr>
+                <td>Naia</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>Tiquinho</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>Jabá</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>Deleizinho</td>
+                <td>11</td>
+            </tr>
+
+            <tr>
+                <td>Esquerdinha</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Rubão</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Danilo</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Alberto</td>
+                <td>09</td>
+            </tr>
+
+            <tr>
+                <td>Mesquita</td>
+                <td>09</td>
+            </tr>
+
+            <tr>
+                <td>Militão</td>
+                <td>09</td>
+            </tr>
+
+            <tr>
+                <td>Val (Paraíba)</td>
+                <td>08</td>
+            </tr>
+
+            <tr>
+                <td>Edinho</td>
+                <td>08</td>
+            </tr>
+
+            <tr>
+                <td>Coelho</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>Eduardo Cremonesi</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>Val Lucio</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>Mura</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>Cidão</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>João Bosco</td>
+                <td>07</td>
+            </tr>
+
+            <tr>
+                <td>Silvão</td>
+                <td>06</td>
+            </tr>
+
+            <tr>
+                <td>Sidimar</td>
+                <td>06</td>
+            </tr>
+
+            <tr>
+                <td>Guerra</td>
+                <td>06</td>
+            </tr>
+
+            <tr>
+                <td>Vagnão</td>
+                <td>06</td>
+            </tr>
+
+            <tr>
+                <td>Josi</td>
+                <td>06</td>
+            </tr>
+
+            <tr>
+                <td>Miranda</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Circinho</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Presença</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Davison</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Dejair</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Patola</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Pé</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Nenê</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Giba</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Roverson</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Delei</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Zélito</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Barba</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Luizão</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Exibidinho</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Bigata</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Odair</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Sérgio Márcio</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Baianinho</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Franco</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Duzinho</td>
+                <td>04</td>
+            </tr>
+
+            <tr>
+                <td>Toninho</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Zé Luiz</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Carlinhos</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Ivo</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Nedson</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Crauzinho</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Jorginho</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Roni</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Otacir</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Zitão</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Maninho</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Alessandro</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Mamão</td>
+                <td>03</td>
+            </tr>
+
+            <tr>
+                <td>Moreno</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Oliveira Paulinho</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Adilson</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Laranjeira</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Edimilson</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Toninho Abreu</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Alaerte</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Jair (Rosolém)</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Valdir</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Contra</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Purguinha</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Mandi</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Gimenez</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Donizete</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Pedrinho</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Zequinha</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Silvan</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Márcio (Ôngaro)</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Dailton</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Mãozinha</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Quita</td>
+                <td>02</td>
+            </tr>
+
+            <tr>
+                <td>Amarildo</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Paulo Belomini</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Nei Buzeto</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Frank</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Vidoto</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Panda</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Vieira</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Cinza</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Marco</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Marcelão</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Maurício</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Daniel</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Robertinho</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Geleia</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Erivaldo</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Alessandro</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Parraga</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Elio</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Mamute</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Ivair</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Tabordinha</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Marcelo Japonês</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Jakson</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Juarez</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Cláudio</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Rone Dias</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td>Leônico José (Leo)</td>
+                <td>01</td>
+            </tr>
+
+            <tr>
+                <td class="uppercase">Total</td>
+                <td class="uppercase">1141</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-column"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="home.html"><strong>Página Inicial</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Clube</strong></p>
+                        <p><a href="historia.html">História</a></p>
+                        <p><a href="diretoria.html">Diretoria</a></p>
+                        <p><a href="artilharia.html">Artilharia</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Futebol</strong></p>
+                        <p><a href="calendario.html">Calendário</a></p>
+                        <p><a href="elenco.html">Elenco</a></p>
+                        <p><a href="trofeus.html">Sala de troféus</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Multimídia</strong></p>
+                        <p><a href="fotos.html">Fotos</a></p>
+                        <p><a href="videos.html">Vídeos</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="agradecimentos.html"><strong>Agradecimentos</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2025 Associação Esportiva dos Funcionários da Cerâmica Sumaré. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link do Script do SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/carrossel.js"></script>
+    <script src="js/backtotop.js"></script>
+
+    <!-- Links dos Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

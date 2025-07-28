@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Link do SwiperJS para CSS do carrossel do elenco e escudos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Cerâmica Sumaré - Home</title>
+
+</head>
+
+<body>
+
+    <button class="scrollTop" onclick="backTop();">
+        <img src="img/arrow.svg" alt="">
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo1.png" width="100px">
+                </a>
+
+                <!-- Botão do menu -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Página Inicial</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Clube
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="historia.html">História</a>
+                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
+                                <a class="dropdown-item" href="artilharia.html">Artilharia</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Futebol
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="calendario.html">Calendário</a>
+                                <a class="dropdown-item" href="sala-de-trofeus.html">Sala de troféus</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fotos.html" class="nav-link">Fotos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="agradecimentos.html" class="nav-link">Agradecimentos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <div class="hero">
+        <a href="historia.html">
+            <img src="img/banner-hero.jpg" alt="">
+        </a>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Seção Calendário de jogos -->
+        <section class="calendario mt-5">
+            <h2>Próximos jogos</h2>
+
+            <!-- Container de Cards -->
+            <div id="proximos-jogos" class="container d-flex">
+
+
+            </div>
+
+            <a href="calendario.html" class="button">Calendário Completo</a>
+        </section>
+
+        <!-- Seção Troféus -->
+        <section class="trofeus mt-5">
+            <h2>Sala de Troféus</h2>
+
+            <div class="container d-flex">
+                <!-- Card 1 -->
+                <div class="card-trofeus">
+                    <img src="img/trofeus/trofeu-master2007.png" alt="Master 2007" loading="lazy">
+                    <p>Master 2007</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-trofeus">
+                    <img src="img/trofeus/trofeu-veteranos2007.png" alt="Veteranos 2007" loading="lazy">
+                    <p>Veteranos 2007</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-trofeus">
+                    <img src="img/trofeus/trofeu-supermaster2008.png" alt="Supermaster 2008" loading="lazy">
+                    <p>Supermaster 2008</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-trofeus">
+                    <img src="img/trofeus/trofeu-hipermaster2011.png" alt="Hipermaster 2011" loading="lazy">
+                    <p>Hipermaster 2011</p>
+                </div>
+            </div>
+
+            <a href="sala-de-trofeus.html" class="button">Todos os Troféus</a>
+        </section>
+
+        <!-- Seção Elenco -->
+        <section class="elenco mt-5">
+            <h2>Elenco Atual</h2>
+
+            <div class="container-elenco swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador8.png" alt="Douglas" class="card-image" loading="lazy">
+                                <p class="posicao goleiro">Goleiro</p>
+                                <h3 class="card-title">Douglas</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador4.png" alt="Lourenço" class="card-image" loading="lazy">
+                                <p class="posicao defensor">Lateral</p>
+                                <h3 class="card-title">Lourenço</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador9.png" alt="Dejair" class="card-image" loading="lazy">
+                                <p class="posicao defensor">Lateral</p>
+                                <h3 class="card-title">Dejair</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador6.png" alt="João Paulo" class="card-image" loading="lazy">
+                                <p class="posicao defensor">Zagueiro</p>
+                                <h3 class="card-title">João Paulo</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador1.png" alt="Ralfi" class="card-image" loading="lazy">
+                                <p class="posicao meiocampista">Volante</p>
+                                <h3 class="card-title">Ralfi</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador2.png" alt="Tanaka" class="card-image" loading="lazy">
+                                <p class="posicao meiocampista">Volante</p>
+                                <h3 class="card-title">Tanaka</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador3.png" alt="Ronaldo" class="card-image" loading="lazy">
+                                <p class="posicao meiocampista">Volante</p>
+                                <h3 class="card-title">Ronaldo</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador5.png" alt="Pabro" class="card-image" loading="lazy">
+                                <p class="posicao atacante">Atacante</p>
+                                <h3 class="card-title">Pabro</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador7.png" alt="Higor" class="card-image" loading="lazy">
+                                <p class="posicao atacante">Atacante</p>
+                                <h3 class="card-title">Higor</h3>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a class="card-link">
+                                <img src="img/elenco/jogador10.png" alt="Maico" class="card-image" loading="lazy">
+                                <p class="posicao atacante">Atacante</p>
+                                <h3 class="card-title">Maico</h3>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-column"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="home.html"><strong>Página Inicial</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Clube</strong></p>
+                        <p><a href="historia.html">História</a></p>
+                        <p><a href="diretoria.html">Diretoria</a></p>
+                        <p><a href="artilharia.html">Artilharia</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Futebol</strong></p>
+                        <p><a href="calendario.html">Calendário</a></p>
+                        <p><a href="elenco.html">Elenco</a></p>
+                        <p><a href="trofeus.html">Sala de troféus</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Multimídia</strong></p>
+                        <p><a href="fotos.html">Fotos</a></p>
+                        <p><a href="videos.html">Vídeos</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="agradecimentos.html"><strong>Agradecimentos</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2025 Associação Esportiva dos Funcionários da Cerâmica Sumaré. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link do Script do SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/carrossel.js"></script>
+    <script src="js/backtotop.js"></script>
+    <script defer src="js/proximosjogos.js"></script>
+
+    <!-- Links dos Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

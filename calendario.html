@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cerâmica Sumaré - Calendário de Jogos</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo1.png" width="100px">
+                </a>
+
+                <!-- Botão do menu -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Página Inicial</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Clube
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="historia.html">História</a>
+                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
+                                <a class="dropdown-item" href="artilharia.html">Artilharia</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Futebol
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="calendario.html">Calendário</a>
+                                <a class="dropdown-item" href="sala-de-trofeus.html">Sala de troféus</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fotos.html" class="nav-link">Fotos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="agradecimentos.html" class="nav-link">Agradecimentos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2 class="mt-5 corpo">Calendário de Jogos</h2>
+
+        <div class="container d-flex">
+
+            <div class="meses">
+                <button onclick="mostrarJogos('janeiro')">Janeiro</button>
+                <button onclick="mostrarJogos('fevereiro')">Fevereiro</button>
+                <button onclick="mostrarJogos('marco')">Março</button>
+                <button onclick="mostrarJogos('abril')">Abril</button>
+                <button onclick="mostrarJogos('maio')">Maio</button>
+                <button onclick="mostrarJogos('junho')">Junho</button>
+                <button onclick="mostrarJogos('julho')">Julho</button>
+                <button onclick="mostrarJogos('agosto')">Agosto</button>
+                <button onclick="mostrarJogos('setembro')">Setembro</button>
+                <button onclick="mostrarJogos('outubro')">Outubro</button>
+                <button onclick="mostrarJogos('novembro')">Novembro</button>
+                <button onclick="mostrarJogos('dezembro')">Dezembro</button>
+            </div>
+
+            <div id="janeiro" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/escudos_times/sem_escudo.png" alt="Veteranos do Florença" class="logo"
+                                loading="lazy">
+                            <div class="placar">5 x 5</div>
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">04/01/2025
+                            <div class="local">Campo do Florença - Campinas</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/escudos_times/sem_escudo.png" alt="Flamenguinho Jd. Eulina" class="logo"
+                                loading="lazy">
+                            <div class="placar">5 x 2</div>
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">11/01/2025
+                            <div class="local">Campo do Flamenguinho - Campinas</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/escudos_times/sem_escudo.png" alt="Estrela Azul" class="logo" loading="lazy">
+                            <div class="placar">2 x 2</div>
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">18/01/2025
+                            <div class="local"> Campo do Estrela Azul - Paulínia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">3 x 5</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="União Vila Ypê" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">25/01/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fevereiro" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">6 x 1</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Jardim Paulistano" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">08/02/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">4 x 1</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Tamo Junto" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">15/02/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">1 x 1</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Real Família" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">22/02/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="marco" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">7 x 0</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Clube do Bonfim" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">01/03/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">1 x 2</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Unidos Boa Vista FC" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">08/03/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">3 x 1</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Nóis Do Bar" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">15/03/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">0 x 1</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Madrugada FC" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">22/03/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">2 x 2</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="EC Socorro" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">29/03/2025
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="abril" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">1 x 2</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Nova Era" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">05/04/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Tiberiano FC" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">26/04/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="maio" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Madrugada FC" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">10/05/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="junho" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Jardim Paulistano" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">07/06/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="julho" class="jogos">
+                <div class="container d-flex">
+                    Nenhuma partida encontrada.
+                </div>
+            </div>
+
+            <div id="agosto" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Padoka" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">02/08/2025
+                            <div class="hora">16h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Veteranos Florença" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">16/08/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="setembro" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Nóis Do Bar" class="logo" loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">06/09/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="outubro" class="jogos">
+                <div class="container d-flex">
+                    Nenhuma partida encontrada.
+                </div>
+            </div>
+
+            <div id="novembro" class="jogos">
+                <div class="container d-flex">
+                    <div class="card-jogos">
+                        <div class="linha-placar">
+                            <img src="img/logo1.png" alt="Cerâmica Sumaré" class="logo" loading="lazy">
+                            <div class="placar">x</div>
+                            <img src="img/escudos_times/sem_escudo.png" alt="Jardim Paulistano" class="logo"
+                                loading="lazy">
+                        </div>
+                        <h3>Amistoso</h3>
+                        <div class="info">29/11/2025
+                            <div class="hora">14h</div>
+                            <div class="local"> Campo do Assaí - Hortolândia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dezembro" class="jogos">
+                <div class="container d-flex">
+                    Nenhuma partida encontrada.
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-column"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="home.html"><strong>Página Inicial</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Clube</strong></p>
+                        <p><a href="historia.html">História</a></p>
+                        <p><a href="diretoria.html">Diretoria</a></p>
+                        <p><a href="artilharia.html">Artilharia</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Futebol</strong></p>
+                        <p><a href="calendario.html">Calendário</a></p>
+                        <p><a href="elenco.html">Elenco</a></p>
+                        <p><a href="trofeus.html">Sala de troféus</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Multimídia</strong></p>
+                        <p><a href="fotos.html">Fotos</a></p>
+                        <p><a href="videos.html">Vídeos</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="agradecimentos.html"><strong>Agradecimentos</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2025 Associação Esportiva dos Funcionários da Cerâmica Sumaré. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jogos.js"></script>
+    <script src="js/calendario.js"></script>
+
+    <!-- Links dos Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

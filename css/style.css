@@ -1,0 +1,595 @@
+:root {
+  --cinza-claro: #e0d8ff;
+  --cinza: #aaa6b8;
+  --cinza-escuro: #93909f;
+  --preto: #000;
+  --grena: #b91213;
+  --azul: #1505ae;
+  --cinza-dark: #0d1314;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --box-shadow-botao: rgba(0, 0, 0, 0.5);
+  --cor-botao: #e1b83f;
+  --cor-botao-hover: #d1a32e;
+  --cor-texto: #263138;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 97px;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(6453%)
+    hue-rotate(356deg) brightness(97%) contrast(117%);
+}
+
+nav {
+  background-color: var(--cinza-claro);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.dropdown-menu {
+  transform: translate(0, -1px);
+}
+
+.nav-link,
+.dropdown-toggle {
+  color: var(--preto) !important;
+  font-weight: 600 !important;
+}
+
+/* Dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  text-align: center;
+}
+
+.dropdown-menu {
+  background-color: var(--cinza) !important;
+  border-radius: 8px !important;
+}
+
+.dropdown-item {
+  color: var(--preto) !important;
+  font-weight: 600 !important;
+  padding: 10px 0 !important;
+  transition: 0.5s;
+}
+
+.dropdown-item:hover {
+  background-color: var(--cinza-escuro) !important;
+}
+
+.hero img {
+  width: 100%;
+}
+
+h2 {
+  color: var(--preto) !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-jogos {
+  border: 1px solid var(--cinza-claro);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.linha-placar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.placar {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--preto);
+}
+
+.card-jogos h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: var(--preto);
+}
+
+.card-jogos .data {
+  font-size: 14px;
+  color: #263138;
+}
+
+.card-jogos .local {
+  font-size: 14px;
+  color: #263138;
+}
+
+@media screen and (max-width: 768px) {
+  /* Seção Calendário */
+  .card-jogos {
+    width: 50%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .placar {
+    font-size: 17px;
+  }
+
+  .card-jogos h3 {
+    font-size: 14px;
+  }
+
+  .card-jogos .info {
+    font-size: 12px;
+  }
+
+  /* Seção Troféus */
+  .card-trofeus {
+    width: 40% !important;
+  }
+
+  .card-trofeus img {
+    width: 50% !important;
+  }
+
+  .card-trofeus p {
+    font-size: 16px !important;
+  }
+
+  /* sala de troféus */
+  .accordion-body img {
+    width: 100% !important;
+  }
+
+  /* fotos */
+  .img-fotos-quadrada {
+    width: 300px;
+  }
+
+  .img-fotos-retangular {
+    width: 300px;
+  }
+
+  /* carrossel do elenco */
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .dropdown-menu {
+    max-width: 100px;
+  }
+
+  /* Seção Calendário */
+  .card-jogos {
+    width: 40%;
+  }
+
+  /* fotos */
+  .img-fotos-quadrada {
+    width: 300px;
+  }
+
+  .img-fotos-retangular {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Seção Calendário */
+  .card-jogos {
+    width: 40%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .placar {
+    font-size: 14px;
+  }
+
+  .card-jogos h3 {
+    font-size: 16px;
+  }
+
+  .card-jogos .info {
+    font-size: 12px;
+  }
+}
+
+.button {
+  display: block;
+  background-color: var(--cor-botao);
+  color: var(--preto);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  margin-top: 40px;
+  width: fit-content;
+  box-shadow: 0 3px 6px var(--box-shadow-botao);
+}
+
+.button:hover {
+  background-color: var(--cor-botao-hover);
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.container .d-flex {
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.calendario d-flex {
+  justify-content: space-between;
+}
+
+/* Estilos dos cards */
+.card-trofeus {
+  border: 1px solid var(--cinza-claro);
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.card-trofeus img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-trofeus p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Elenco e Escudos */
+.container-elenco {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  width: 250px;
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-link .card-image {
+  width: 210px;
+}
+
+.card-list .card-link .posicao {
+  background-color: #dde4ff;
+  color: #5372f0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.card-list .card-link .posicao.goleiro {
+  background-color: #ffe3d2;
+  color: #ff4400;
+}
+
+.card-list .card-link .posicao.defensor {
+  background-color: #fcfcc6;
+  color: #d5c51c;
+}
+
+.card-list .card-link .posicao.meiocampista {
+  background-color: #e4ffdb;
+  color: #6dc723;
+}
+
+.card-list .card-link .posicao.atacante {
+  background-color: #d2e9ff;
+  color: #2a80bd;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: var(--preto);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: var(--grena);
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: var(--grena);
+  margin-top: -35px;
+}
+
+.card-wrapper .swiper-button-next {
+  color: var(--grena);
+  margin-top: -35px;
+}
+
+/* história.html */
+.ancora::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+.corpo,
+.corpo-titulo-topicos {
+  color: var(--preto);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.corpo-topicos a,
+#corpo-topicos-encerramento a {
+  text-decoration: none;
+  color: rgb(21, 5, 174);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h3.corpo {
+  font-size: 20px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+table,
+.table.table-striped.table-bordered.table-hover {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid var(--cinza-claro);
+}
+
+table .titulos {
+  font-weight: bold;
+  color: var(--preto);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table tbody td {
+  font-size: 15px;
+  color: var(--preto);
+}
+
+table .uppercase {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#corpo-mensagem-final {
+  color: var(--preto);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Accordion sala de troféus */
+.accordion-body img {
+  width: 50%;
+}
+
+.scrollTop {
+  outline: none;
+  border: 0;
+  background-color: var(--cinza-claro);
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  box-shadow: 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+.scrollTop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTop img {
+  width: 100%;
+  transform: rotate(270deg);
+}
+
+/* Calendário de jogos */
+.meses {
+  display: block;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.meses button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--preto);
+  border-radius: 5px;
+}
+
+.meses button:hover {
+  background-color: var(--cinza-claro);
+}
+
+.jogos {
+  display: none;
+}
+
+.jogos.ativo {
+  display: flex;
+}
+
+.meses button:focus {
+  font-weight: 600;
+  outline: none;
+  box-shadow: 0 0 5px var(--cinza-claro);
+}
+
+.calendario-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Fotos */
+.img-fotos-quadrada {
+  max-width: 450px;
+}
+
+.img-fotos-retangular {
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--cinza-claro);
+  color: var(--preto);
+  padding: 40px 0;
+}
+
+.footer-column {
+  line-height: 2;
+}
+
+.footer-column p,
+.footer-column p a {
+  margin: 8px 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-column p a:hover {
+  color: var(--preto);
+}
+
+footer a {
+  color: var(--preto);
+  text-decoration: none;
+}
+
+.footer-column p strong {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid var(--preto);
+  margin: 30px 0;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 1000;
+}

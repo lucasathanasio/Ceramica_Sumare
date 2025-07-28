@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link do Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- Link do SwiperJS para CSS do carrossel do elenco e escudos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Cerâmica Sumaré - Sala de Troféus</title>
+
+</head>
+
+<body>
+
+    <button class="scrollTop" onclick="backTop();">
+        <img src="img/arrow.svg" alt="">
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo1.png" width="100px">
+                </a>
+
+                <!-- Botão do menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal"
+                    aria-controls="nav-principal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Página Inicial</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Clube
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="historia.html">História</a></li>
+                                <li><a class="dropdown-item" href="diretoria.html">Diretoria</a></li>
+                                <li><a class="dropdown-item" href="artilharia.html">Artilharia</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Futebol
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="calendario.html">Calendário</a></li>
+                                <li><a class="dropdown-item" href="sala-de-trofeus.html">Sala de troféus</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fotos.html" class="nav-link">Fotos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="agradecimentos.html" class="nav-link">Agradecimentos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h2 class="mt-5 corpo">Sala de Troféus</h2>
+
+        <div class="mb-5 accordion" id="accordionExample">
+
+            <!-- Item 1 do accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Futsal
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Campeão Copa Hortolândia de Futsal 1983</strong> <br>
+                        <img src="img/trofeus/trofeu futsal1983.jpg" class="mt-1"
+                            alt="Troféu Copa Hortolândia de Futsal 1983" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeonatos de Futsal 1984 e 1985</strong> <br>
+                        <img src="img/trofeus/trofeus futsal.jpg" class="mt-1"
+                            alt="Troféus Campeonatos de Futsal 1984 e 1985" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 do accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Society
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Campeão Interno Society 1998</strong> <br>
+                        <img src="img/trofeus/trofeu society1998.jpg" class="mt-1"
+                            alt="Troféu Campeão Interno Society 1998" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 do accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Futebol
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>3º Colocado Veteranos 1995</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1995.jpg" class="mt-1" alt="3º Colocado Veteranos 1995"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 1996</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1996.jpg" class="mt-1" alt="Campeão Veteranos 1996"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 1997</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1997.jpg" class="mt-1" alt="Campeão Veteranos 1997"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 1998</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1998.jpg" class="mt-1" alt="Campeão Veteranos 1998"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 1999</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1999.jpg" class="mt-1" alt="Campeão Veteranos 1999"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2000</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2000.jpg" class="mt-1" alt="Campeão Veteranos 2000"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2001</strong> <br>
+                        <img src="img/trofeus/trofeu master2001.jpg" class="mt-1" alt="Campeão Master 2001"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2002</strong> <br>
+                        <img src="img/trofeus/trofeu master2002.jpg" class="mt-1" alt="Vice-Campeão Master 2002"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2002</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2002.jpg" class="mt-1" alt="Campeão Veteranos 2002"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2003</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2003.jpg" class="mt-1" alt="Campeão Veteranos 2003"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2004</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2004.jpg" class="mt-1" alt="Campeão Veteranos 2004"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2004</strong> <br>
+                        <img src="img/trofeus/trofeu master2004.jpg" class="mt-1" alt="Vice-Campeão Master 2004"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2005</strong> <br>
+                        <img src="img/trofeus/trofeu master2005.jpg" class="mt-1" alt="Campeão Master 2005"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Veteranos 2006</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2006.jpg" class="mt-1" alt="Vice-Campeão Veteranos 2006"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2006</strong> <br>
+                        <img src="img/trofeus/trofeu master2006.jpg" class="mt-1" alt="Campeão Master 2006"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>3º Colocado Master 2006 (Cerâmica B)</strong> <br>
+                        <img src="img/trofeus/trofeu master2006 b.jpg" class="mt-1"
+                            alt="3º Colocado Master 2006 (Cerâmica B)" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2007</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2007.jpg" class="mt-1" alt="Campeão Veteranos 2007"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2007</strong> <br>
+                        <img src="img/trofeus/trofeu master2007.jpg" class="mt-1" alt="Vice-Campeão Master 2007"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Super Master 2008</strong> <br>
+                        <img src="img/trofeus/trofeu supermaster2008.jpg" class="mt-1" alt="Campeão Super Master 2008"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Veteranos 2009</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2009.jpg" class="mt-1" alt="Vice-Campeão Veteranos 2009"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>3º Colocado Master 2009</strong> <br>
+                        <img src="img/trofeus/trofeu master2009.jpg" class="mt-1" alt="3º Colocado Master 2009"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2010</strong> <br>
+                        <img src="img/trofeus/trofeu master2010.jpg" class="mt-1" alt="Campeão Master 2010"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Super Master 2010</strong> <br>
+                        <img src="img/trofeus/trofeu supermaster2010.jpg" class="mt-1" alt="Campeão Super Master 2010"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Hiper Master 2011</strong> <br>
+                        <img src="img/trofeus/trofeu hipermaster2011.jpg" class="mt-1" alt="Campeão Hiper Master 2011"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2011</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2011.jpg" class="mt-1" alt="Campeão Veteranos 2011"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2011</strong> <br>
+                        <img src="img/trofeus/trofeu master2011.jpg" class="mt-1" alt="Campeão Master 2011"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2013</strong> <br>
+                        <img src="img/trofeus/trofeu vice master2013.jpg" class="mt-1" alt="Vice-Campeão Master 2013"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>3º Colocado Veteranos 2013</strong> <br>
+                        <img src="img/trofeus/trofeu 3colocado veteranos2013.jpg" class="mt-1"
+                            alt="3º Colocado Veteranos 2013" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2014</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2014.jpg" class="mt-1" alt="Campeão Veteranos 2014"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2014</strong> <br>
+                        <img src="img/trofeus/trofeu vice master2014.jpg" class="mt-1" alt="Vice-Campeão Master 2014"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Vice-Campeão Master 2015</strong> <br>
+                        <img src="img/trofeus/trofeu vice master2015.jpg" class="mt-1" alt="Vice-Campeão Master 2015"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 do accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Futebol - Troféus Disciplina
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 1999 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1999 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 1999 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2001 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu master2001 disciplina.jpg" class="mt-1"
+                            alt="Campeão Master 2001 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2004 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu master2004 disciplina.jpg" class="mt-1"
+                            alt="Campeão Master 2004 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2007 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2007 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 2007 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Hiper Master 2011 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu hipermaster2011 disciplina.jpg" class="mt-1"
+                            alt="Campeão Hiper Master 2011 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2011 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2011 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 2011 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2013 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu master2013 disciplina.jpg" class="mt-1"
+                            alt="Campeão Master 2013 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2013 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2013 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 2013 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2014 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2014 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 2014 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Master 2014 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu master2014 disciplina.jpg" class="mt-1"
+                            alt="Campeão Master 2014 Disciplina" loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Campeão Veteranos 2015 Disciplina</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos2015 disciplina.jpg" class="mt-1"
+                            alt="Campeão Veteranos 2015 Disciplina" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 do accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Futebol - Troféus Comemorativos
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Troféu Homenagem 1984</strong> <br>
+                        <img src="img/trofeus/trofeu homenagem1984.jpg" class="mt-1" alt="Troféu Homenagem 1984"
+                            loading="lazy">
+                    </div>
+                    <div class="accordion-body">
+                        <strong>Tricampeão Veteranos 1998</strong> <br>
+                        <img src="img/trofeus/trofeu veteranos1998 tricampeao.jpg" class="mt-1"
+                            alt="Triampeão Veteranos 1998" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-column"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="home.html"><strong>Página Inicial</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Clube</strong></p>
+                        <p><a href="historia.html">História</a></p>
+                        <p><a href="diretoria.html">Diretoria</a></p>
+                        <p><a href="artilharia.html">Artilharia</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Futebol</strong></p>
+                        <p><a href="calendario.html">Calendário</a></p>
+                        <p><a href="elenco.html">Elenco</a></p>
+                        <p><a href="trofeus.html">Sala de troféus</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><strong>Multimídia</strong></p>
+                        <p><a href="fotos.html">Fotos</a></p>
+                        <p><a href="videos.html">Vídeos</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-column">
+                        <p><a href="agradecimentos.html"><strong>Agradecimentos</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2025 Associação Esportiva dos Funcionários da Cerâmica Sumaré. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link do Script do SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/carrossel.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>
